@@ -23,8 +23,7 @@ LLM → RAGSource_catalog → RAGSource_toc → RAGSource_get (§-granular)
 | Repository | Beschreibung |
 |-----------|-------------|
 | [ragsource-server](https://github.com/ragsource-ai/ragsource-server) | MCP-Server (Cloudflare Workers + D1) — der Kern des Systems |
-| [ragsource-content](https://github.com/ragsource-ai/ragsource-content) | Öffentliche Rechtstexte als strukturiertes Markdown (244+ Quellen) |
-| [ragsource-gateway](https://github.com/ragsource-ai/ragsource-gateway) | Lokaler Gateway: öffentliche + private Dokumente über einen MCP-Endpunkt |
+| [ragsource-content](https://github.com/ragsource-ai/ragsource-content) | Öffentliche Rechtstexte als strukturiertes Markdown (378+ Quellen) |
 
 ---
 
@@ -43,7 +42,7 @@ RAGSource ist eine generische Engine. Typische Einsatzszenarien:
 
 ## Architektur in 3 Sätzen
 
-Der **Server** läuft als Cloudflare Worker und stellt öffentliche Rechtstexte per MCP bereit. Das **Content-Repo** enthält die Quellen als Markdown mit YAML-Frontmatter — CI/CD baut die Datenbank automatisch neu. Der **Gateway** läuft lokal bei der Organisation und fügt private Dokumente hinzu, ohne dass diese die eigene Infrastruktur verlassen.
+Der **Server** läuft als Cloudflare Worker und stellt öffentliche Rechtstexte per MCP bereit. Das **Content-Repo** enthält die Quellen als Markdown mit YAML-Frontmatter — CI/CD baut die Datenbank automatisch neu.
 
 ---
 
@@ -53,10 +52,6 @@ Der **Server** läuft als Cloudflare Worker und stellt öffentliche Rechtstexte 
 # Server lokal starten (Cloudflare Workers)
 git clone https://github.com/ragsource-ai/ragsource-server
 cd ragsource-server && npm install && npm run dev
-
-# Gateway für private Dokumente
-git clone https://github.com/ragsource-ai/ragsource-gateway
-cd ragsource-gateway && npm install && cp .env.example .env && npm run dev
 ```
 
 MCP-URL in Claude.ai / Claude Desktop / Langdock eintragen — fertig.
