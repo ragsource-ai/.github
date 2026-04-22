@@ -72,7 +72,7 @@ MCP-URL in Claude Web / Claude Desktop / kompatible MCP-Clients eintragen — fe
 
 ## Lizenz
 
-MIT (Code) · CC-BY 4.0 (Inhalte/Prompts) · [Powered by RAGSource](https://github.com/ragsource-ai)
+MIT (Code) · CC-BY 4.0 (Inhalte/Prompts) · [Powered by RAGSource](https://github.com/ragsource-ai) · [Impressum](https://github.com/ragsource-ai/.github/blob/main/profile/LEGAL.md)
 
 ---
 
