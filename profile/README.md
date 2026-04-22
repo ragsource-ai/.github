@@ -2,6 +2,10 @@
 
 **RAGSource** ist eine Open-Source-Engine für Agentic RAG mit strukturierten Wissensquellen — entwickelt für den Einsatz in Verwaltung, Kommunen und Organisationen mit komplexen Regelwerken.
 
+[![License: MIT](https://img.shields.io/badge/server-MIT-green.svg)](https://github.com/ragsource-ai/ragsource-server/blob/main/LICENSE)
+[![License: CC BY 4.0](https://img.shields.io/badge/content-CC%20BY%204.0-lightgrey.svg)](https://github.com/ragsource-ai/ragsource-content/blob/main/LICENSE)
+[![Rechtstexte](https://img.shields.io/badge/Rechtstexte-621%2B-blue.svg)](https://github.com/ragsource-ai/ragsource-content)
+
 ---
 
 ## Was ist RAGSource?
@@ -14,7 +18,7 @@ Das System nutzt **hierarchisches Retrieval**: Der KI-Assistent navigiert selbst
 LLM → RAGSource_catalog → RAGSource_toc → RAGSource_get (§-granular)
 ```
 
-**Normenhierarchie ist eingebaut:** EU → Bund → Land → Kreis → Verband → Gemeinde → Intern. Bei Konflikten zwischen Quellen benennt der Assistent die höherrangige Norm.
+**Normenhierarchie ist eingebaut:** EU → Bund → Land → Kreis → Verband → Gemeinde. Bei Konflikten zwischen Quellen benennt der Assistent die höherrangige Norm.
 
 ---
 
@@ -23,41 +27,46 @@ LLM → RAGSource_catalog → RAGSource_toc → RAGSource_get (§-granular)
 | Repository | Beschreibung |
 |-----------|-------------|
 | [ragsource-server](https://github.com/ragsource-ai/ragsource-server) | MCP-Server (Cloudflare Workers + D1) — der Kern des Systems |
-| [ragsource-content](https://github.com/ragsource-ai/ragsource-content) | Öffentliche Rechtstexte als strukturiertes Markdown (378+ Quellen) |
+| [ragsource-content](https://github.com/ragsource-ai/ragsource-content) | 621+ öffentliche Rechtstexte als strukturiertes Markdown |
+
+---
+
+## Live-Deployments
+
+| Anwendung | URL | Beschreibung |
+|-----------|-----|-------------|
+| **amtsschimmel.ai** | [mcp.amtsschimmel.ai/mcp](https://mcp.amtsschimmel.ai/mcp) | Kommunales Verwaltungsrecht Deutschland |
+| **brandmeister.ai** | [mcp.brandmeister.ai/mcp](https://mcp.brandmeister.ai/mcp) | Feuerwehr- und Gefahrstoffrecht |
+| **paragrafenreiter.ai** | [mcp.paragrafenreiter.ai/mcp](https://mcp.paragrafenreiter.ai/mcp) | Alle Quellen, kein Tenancy-Filter |
 
 ---
 
 ## Anwendungsfälle
 
-RAGSource ist eine generische Engine. Typische Einsatzszenarien:
-
 - **Kommunalverwaltungen** — Satzungen, Gemeindeordnung, Kreisrecht, Bundesrecht
-- **Öffentliche Einrichtungen** — Tarifrecht (TVöD, TV-L), Dienstanweisungen
-- **Organisationen mit Regelwerken** — Interne Richtlinien kombiniert mit externem Recht
+- **Feuerwehr & Gefahrenabwehr** — FwDV, Brandschutzrecht, Gefahrstoffdaten (14.936 Stoffe)
+- **Öffentliche Einrichtungen** — Tarifrecht (TVöD, TV-L, AVR), Dienstanweisungen
 - **Compliance-Assistenten** — Normenhierarchie-bewusstes Retrieval für rechtssichere Antworten
-
-> **amtsschimmel.ai** ist eine Anwendung, die auf RAGSource aufbaut — spezialisiert auf kommunales Verwaltungsrecht in Deutschland.
 
 ---
 
-## Architektur in 3 Sätzen
+## Architektur
 
-Der **Server** läuft als Cloudflare Worker und stellt öffentliche Rechtstexte per MCP bereit. Das **Content-Repo** enthält die Quellen als Markdown mit YAML-Frontmatter — CI/CD baut die Datenbank automatisch neu.
+Der **Server** läuft als Cloudflare Worker und stellt Rechtstexte per MCP bereit. Das **Content-Repo** enthält die Quellen als Markdown mit YAML-Frontmatter — CI/CD baut die Datenbank automatisch neu. Neue Inhalte sind innerhalb von **2 Minuten** live.
 
 ---
 
 ## Loslegen
 
 ```bash
-# Server lokal starten (Cloudflare Workers)
 git clone https://github.com/ragsource-ai/ragsource-server
 cd ragsource-server && npm install && npm run dev
 ```
 
-MCP-URL in Claude.ai / Claude Desktop / Langdock eintragen — fertig.
+MCP-URL in Claude.ai, Claude Desktop oder Langdock eintragen — fertig.
 
 ---
 
 ## Lizenz
 
-MIT (Code) · CC-BY 4.0 (Inhalte/Prompts) · [Powered by RAGSource](https://github.com/ragsource-ai)
+MIT (Code) · CC-BY 4.0 (Inhalte) · [Powered by RAGSource](https://github.com/ragsource-ai)
