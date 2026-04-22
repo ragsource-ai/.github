@@ -12,18 +12,7 @@ Deutschland
 **Kontakt:**
 E-Mail: mail@christiantraub.de
 
-<!-- TODO: Telefonnummer ergänzen (nicht TMG-Pflicht, aber empfohlen) -->
-<!-- Telefon: +49 ... -->
-
----
-
-## Hinweise zu Umsatzsteuer und Gewerbeanmeldung
-
-<!-- TODO: Eines der folgenden ergänzen: -->
-<!-- Option A – Kleinunternehmer (§ 19 UStG): -->
-<!-- Ich bin Kleinunternehmer im Sinne von § 19 UStG. Es wird keine Umsatzsteuer ausgewiesen. -->
-<!-- Option B – Umsatzsteuerpflichtig: -->
-<!-- Umsatzsteuer-Identifikationsnummer: DE... -->
+**Umsatzsteuer-Identifikationsnummer** gemäß § 27a UStG: DE459613042
 
 ---
 
