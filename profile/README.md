@@ -16,9 +16,12 @@ Das System nutzt **hierarchisches Retrieval**: Der KI-Assistent navigiert selbst
 
 ```
 LLM → RAGSource_catalog → RAGSource_toc → RAGSource_get (§-granular)
+                                         → RAGSource_db_query (strukturierte Daten)
 ```
 
 **Normenhierarchie ist eingebaut:** EU → Bund → Land → Kreis → Verband → Gemeinde. Bei Konflikten zwischen Quellen benennt der Assistent die höherrangige Norm.
+
+Neben Rechtstexten enthält das System **Skills** — domänenspezifische LLM-Handlungsanleitungen für Einsatztaktik, Gefahrstoffabfragen, Rechtsfragen u.v.m. Skills und Rechtstexte liegen im selben Repo und werden identisch indexiert.
 
 ---
 
@@ -27,7 +30,7 @@ LLM → RAGSource_catalog → RAGSource_toc → RAGSource_get (§-granular)
 | Repository | Beschreibung |
 |-----------|-------------|
 | [ragsource-server](https://github.com/ragsource-ai/ragsource-server) | MCP-Server (Cloudflare Workers + D1) — der Kern des Systems |
-| [ragsource-content](https://github.com/ragsource-ai/ragsource-content) | 621+ öffentliche Rechtstexte als strukturiertes Markdown |
+| [ragsource-content](https://github.com/ragsource-ai/ragsource-content) | 621+ öffentliche Rechtstexte + Skills als strukturiertes Markdown |
 
 ---
 
@@ -63,10 +66,22 @@ git clone https://github.com/ragsource-ai/ragsource-server
 cd ragsource-server && npm install && npm run dev
 ```
 
-MCP-URL in Claude.ai, Claude Desktop oder Langdock eintragen — fertig.
+MCP-URL in Claude Web / Claude Desktop / kompatible MCP-Clients eintragen — fertig.
 
 ---
 
 ## Lizenz
 
-MIT (Code) · CC-BY 4.0 (Inhalte) · [Powered by RAGSource](https://github.com/ragsource-ai)
+MIT (Code) · CC-BY 4.0 (Inhalte/Prompts) · [Powered by RAGSource](https://github.com/ragsource-ai)
+
+---
+
+<p align="center">
+  <br>
+  Made with ❤️ for Open Source AI
+  <br><br>
+  This project started from a personal need: reliable, citable knowledge<br>
+  for firefighters, public servants, and everyone who needs to get things right.<br>
+  <br>
+  <strong>It belongs to everybody.</strong>
+</p>
