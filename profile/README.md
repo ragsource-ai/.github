@@ -61,7 +61,7 @@ Der **Server** läuft als Cloudflare Worker und stellt Rechtstexte per MCP berei
 
 ## Interesse?
 
-Anfragen zu Pilotprojekten, Lizenzen oder technischer Integration: [mail@christiantraub.de](mailto:mail@christiantraub.de)
+Anfragen zu Pilotprojekten, Lizenzen oder technischer Integration: [christian@ragsource.ai](mailto:christian@ragsource.ai)
 
 ---
 

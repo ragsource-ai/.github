@@ -10,7 +10,7 @@ Hauptstraße 71
 Deutschland
 
 **Kontakt:**
-E-Mail: mail@christiantraub.de
+E-Mail: christian@ragsource.ai
 
 **Umsatzsteuer-Identifikationsnummer** gemäß § 27a UStG: DE459613042
 
