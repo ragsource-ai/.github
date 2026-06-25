@@ -40,11 +40,11 @@ Externe Links wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße
 
 ## Urheberrecht
 
-**Code:** MIT-Lizenz — siehe [ragsource-server/LICENSE](https://github.com/ragsource-ai/ragsource-server/blob/main/LICENSE)
+**Code:** AGPL v3 — siehe [ragsource-server/LICENSE](https://github.com/ragsource-ai/ragsource-server/blob/main/LICENSE)
 
-**Inhalte und Prompts:** CC BY 4.0 — siehe [ragsource-content/LICENSE](https://github.com/ragsource-ai/ragsource-content/blob/main/LICENSE)
+**Rechtstexte (`regelungsrahmen/`):** ODbL v1.0 — Amtliche Werke sind nach § 5 UrhG gemeinfrei; die redaktionelle Aufbereitung und Datenbankstruktur stehen unter ODbL v1.0. Ableitungen müssen ebenfalls unter ODbL veröffentlicht werden.
 
-Amtliche Werke (Gesetze, Satzungen, Verordnungen) sind nach § 5 UrhG gemeinfrei. Die redaktionelle Aufbereitung und Strukturierung durch RAGSource steht unter CC BY 4.0.
+**Skills und Prompts (`skills/`):** CC-BY-SA 4.0 — siehe [ragsource-content/LICENSE](https://github.com/ragsource-ai/ragsource-content/blob/main/LICENSE)
 
 ---
 
@@ -52,8 +52,8 @@ Amtliche Werke (Gesetze, Satzungen, Verordnungen) sind nach § 5 UrhG gemeinfrei
 
 Diese GitHub-Organisation selbst erhebt keine personenbezogenen Daten. Für die einzelnen Produkte gelten die jeweiligen Datenschutzerklärungen:
 
-- [amtsschimmel.ai/datenschutz](https://amtsschimmel.ai/datenschutz) *(falls vorhanden)*
-- [brandmeister.ai/datenschutz](https://brandmeister.ai/datenschutz) *(falls vorhanden)*
+- [amtsschimmel.ai/datenschutz](https://amtsschimmel.ai/datenschutz)
+- [brandmeister.ai/datenschutz](https://brandmeister.ai/datenschutz)
 - [paragrafenreiter.ai/datenschutz](https://paragrafenreiter.ai/datenschutz) *(falls vorhanden)*
 
 Für die Datenverarbeitung durch GitHub gelten die [Datenschutzbestimmungen von GitHub](https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement).

@@ -1,10 +1,10 @@
 # RAGSource
 
-**RAGSource** ist eine Open-Source-Engine für Agentic RAG mit strukturierten Wissensquellen — entwickelt für den Einsatz in Verwaltung, Kommunen und Organisationen mit komplexen Regelwerken.
+**RAGSource** ist ein Open-Source-Framework für Agentic RAG mit strukturierten Wissensquellen — entwickelt für den Einsatz in Verwaltung, Kommunen und Organisationen mit komplexen Regelwerken.
 
-[![License: MIT](https://img.shields.io/badge/server-MIT-green.svg)](https://github.com/ragsource-ai/ragsource-server/blob/main/LICENSE)
-[![License: CC BY 4.0](https://img.shields.io/badge/content-CC%20BY%204.0-lightgrey.svg)](https://github.com/ragsource-ai/ragsource-content/blob/main/LICENSE)
-[![Rechtstexte](https://img.shields.io/badge/Rechtstexte-621%2B-blue.svg)](https://github.com/ragsource-ai/ragsource-content)
+[![License: AGPL v3](https://img.shields.io/badge/server-AGPL%20v3-blue.svg)](https://github.com/ragsource-ai/ragsource-server/blob/main/LICENSE)
+[![License: ODbL](https://img.shields.io/badge/Rechtstexte-ODbL-brightgreen.svg)](https://github.com/ragsource-ai/ragsource-content/blob/main/LICENSE)
+[![License: CC BY-SA 4.0](https://img.shields.io/badge/Skills-CC%20BY--SA%204.0-lightgrey.svg)](https://github.com/ragsource-ai/ragsource-content/blob/main/LICENSE)
 
 ---
 
@@ -12,16 +12,16 @@
 
 LLMs halluzinieren, wenn sie aus dem Gedächtnis arbeiten. RAGSource löst das für strukturierte Wissensdomänen: Gesetze, Satzungen, interne Richtlinien, Verträge, Akten.
 
-Das System nutzt **hierarchisches Retrieval**: Der KI-Assistent navigiert selbständig von einer Quellenübersicht (Catalog) über das Inhaltsverzeichnis (TOC) zu den exakten Paragraphen — und zitiert immer aus dem Originalwortlaut.
+Das System nutzt **hierarchisches Retrieval**: Der KI-Assistent navigiert selbständig von einer Quellenübersicht über das Inhaltsverzeichnis zu den exakten Paragraphen — und zitiert immer aus dem Originalwortlaut.
 
 ```
-LLM → RAGSource_catalog → RAGSource_toc → RAGSource_get (§-granular)
-                                         → RAGSource_db_query (strukturierte Daten)
+LLM → rag_legal → rag_contents → rag_read (§-granular)
+                               → rag_db_query (strukturierte Daten)
 ```
 
 **Normenhierarchie ist eingebaut:** EU → Bund → Land → Kreis → Verband → Gemeinde. Bei Konflikten zwischen Quellen benennt der Assistent die höherrangige Norm.
 
-Neben Rechtstexten enthält das System **Skills** — domänenspezifische LLM-Handlungsanleitungen für Einsatztaktik, Gefahrstoffabfragen, Rechtsfragen u.v.m. Skills und Rechtstexte liegen im selben Repo und werden identisch indexiert.
+Neben Rechtstexten enthält das System **Skills** — domänenspezifische LLM-Handlungsanleitungen für Einsatztaktik, Gefahrstoffabfragen, Rechtsfragen u.v.m.
 
 ---
 
@@ -29,8 +29,8 @@ Neben Rechtstexten enthält das System **Skills** — domänenspezifische LLM-Ha
 
 | Repository | Beschreibung |
 |-----------|-------------|
-| [ragsource-server](https://github.com/ragsource-ai/ragsource-server) | MCP-Server (Cloudflare Workers + D1) — der Kern des Systems |
-| [ragsource-content](https://github.com/ragsource-ai/ragsource-content) | 621+ öffentliche Rechtstexte + Skills als strukturiertes Markdown |
+| ragsource-server | MCP-Server (Cloudflare Workers + D1) — der Kern des Systems |
+| ragsource-content | Öffentliche Rechtstexte + Skills als strukturiertes Markdown |
 
 ---
 
@@ -47,7 +47,7 @@ Neben Rechtstexten enthält das System **Skills** — domänenspezifische LLM-Ha
 ## Anwendungsfälle
 
 - **Kommunalverwaltungen** — Satzungen, Gemeindeordnung, Kreisrecht, Bundesrecht
-- **Feuerwehr & Gefahrenabwehr** — FwDV, Brandschutzrecht, Gefahrstoffdaten (14.936 Stoffe)
+- **Feuerwehr & Gefahrenabwehr** — FwDV, Brandschutzrecht, Gefahrstoffdaten
 - **Öffentliche Einrichtungen** — Tarifrecht (TVöD, TV-L, AVR), Dienstanweisungen
 - **Compliance-Assistenten** — Normenhierarchie-bewusstes Retrieval für rechtssichere Antworten
 
@@ -59,20 +59,15 @@ Der **Server** läuft als Cloudflare Worker und stellt Rechtstexte per MCP berei
 
 ---
 
-## Loslegen
+## Interesse?
 
-```bash
-git clone https://github.com/ragsource-ai/ragsource-server
-cd ragsource-server && npm install && npm run dev
-```
-
-MCP-URL in Claude Web / Claude Desktop / kompatible MCP-Clients eintragen — fertig.
+Anfragen zu Pilotprojekten, Lizenzen oder technischer Integration: [mail@christiantraub.de](mailto:mail@christiantraub.de)
 
 ---
 
 ## Lizenz
 
-MIT (Code) · CC-BY 4.0 (Inhalte/Prompts) · [Powered by RAGSource](https://github.com/ragsource-ai) · [Impressum](https://github.com/ragsource-ai/.github/blob/main/profile/LEGAL.md)
+AGPL v3 (Code) · ODbL v1.0 (Rechtstexte) · CC-BY-SA 4.0 (Skills/Prompts) · [Powered by RAGSource](https://github.com/ragsource-ai) · [Impressum](https://github.com/ragsource-ai/.github/blob/main/profile/LEGAL.md)
 
 ---
 
