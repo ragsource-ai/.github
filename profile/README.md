@@ -34,13 +34,15 @@ Neben Rechtstexten enthält das System **Skills** — domänenspezifische LLM-Ha
 
 ---
 
-## Live-Deployments
+## Marken
 
-| Anwendung | URL | Beschreibung |
-|-----------|-----|-------------|
-| **amtsschimmel.ai** | [mcp.amtsschimmel.ai/mcp](https://mcp.amtsschimmel.ai/mcp) | Kommunales Verwaltungsrecht Deutschland |
-| **brandmeister.ai** | [mcp.brandmeister.ai/mcp](https://mcp.brandmeister.ai/mcp) | Feuerwehr- und Gefahrstoffrecht |
-| **paragrafenreiter.ai** | [mcp.paragrafenreiter.ai/mcp](https://mcp.paragrafenreiter.ai/mcp) | Alle Quellen, kein Tenancy-Filter |
+| Marke | Website | Schwerpunkt |
+|-------|---------|-------------|
+| **amtsschimmel.ai** | [amtsschimmel.ai](https://amtsschimmel.ai) | Kommunale Verwaltung |
+| **brandmeister.ai** | [brandmeister.ai](https://brandmeister.ai) | Feuerwehr und Gefahrenabwehr |
+| **paragrafenreiter.ai** | [paragrafenreiter.ai](https://paragrafenreiter.ai) | Rechtsanwendung allgemein (in Vorbereitung) |
+
+Das System wird als **betreute Arbeitsumgebung** bereitgestellt — Zugang und Konditionen über die jeweilige Marke.
 
 ---
 
@@ -55,7 +57,7 @@ Neben Rechtstexten enthält das System **Skills** — domänenspezifische LLM-Ha
 
 ## Architektur
 
-Der **Server** läuft als Cloudflare Worker und stellt Rechtstexte per MCP bereit. Das **Content-Repo** enthält die Quellen als Markdown mit YAML-Frontmatter — CI/CD baut die Datenbank automatisch neu. Neue Inhalte sind innerhalb von **2 Minuten** live.
+Der **Server** stellt Rechtstexte per MCP bereit — wahlweise als Cloudflare Worker oder als Node-Dienst auf EU-Infrastruktur, aus derselben Kernschicht. Das **Content-Repo** enthält die Quellen als Markdown mit YAML-Frontmatter — CI/CD baut die Datenbank automatisch neu. Neue Inhalte sind innerhalb von **2 Minuten** live.
 
 ---
 
