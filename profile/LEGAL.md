@@ -40,11 +40,9 @@ Externe Links wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße
 
 ## Urheberrecht
 
-**Code:** AGPL v3 — siehe [ragsource-server/LICENSE](https://github.com/ragsource-ai/ragsource-server/blob/main/LICENSE)
+Software, Datenbestand, redaktionelle Aufbereitung und Struktur: © 2026 Christian Traub, alle Rechte vorbehalten. Die Nutzung richtet sich nach den Nutzungsbedingungen des jeweiligen Angebots.
 
-**Rechtstexte (`regelungsrahmen/`):** ODbL v1.0 — Amtliche Werke sind nach § 5 UrhG gemeinfrei; die redaktionelle Aufbereitung und Datenbankstruktur stehen unter ODbL v1.0. Ableitungen müssen ebenfalls unter ODbL veröffentlicht werden.
-
-**Skills und Prompts (`skills/`):** CC-BY-SA 4.0 — siehe [ragsource-content/LICENSE](https://github.com/ragsource-ai/ragsource-content/blob/main/LICENSE)
+Amtliche Werke (Gesetze, Satzungen, Verwaltungsvorschriften) sind nach § 5 UrhG gemeinfrei; geschützt ist, soweit rechtlich möglich, die eigene Aufbereitung, Strukturierung und Zusammenstellung. Das Angebot beruht auf etablierten Open-Source-Bausteinen, die jeweils unter ihren eigenen Lizenzen stehen.
 
 ---
 
