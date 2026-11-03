@@ -42,7 +42,7 @@ Externe Links wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße
 
 Software, Datenbestand, redaktionelle Aufbereitung und Struktur: © 2026 Christian Traub, alle Rechte vorbehalten. Die Nutzung richtet sich nach den Nutzungsbedingungen des jeweiligen Angebots.
 
-Amtliche Werke (Gesetze, Satzungen, Verwaltungsvorschriften) sind nach § 5 UrhG gemeinfrei; geschützt ist, soweit rechtlich möglich, die eigene Aufbereitung, Strukturierung und Zusammenstellung. Das Angebot beruht auf etablierten Open-Source-Bausteinen, die jeweils unter ihren eigenen Lizenzen stehen.
+Amtliche Werke (Gesetze, Satzungen, Verwaltungsvorschriften) sind nach § 5 UrhG gemeinfrei; geschützt ist, soweit rechtlich möglich, die eigene Aufbereitung, Strukturierung und Zusammenstellung. Das Angebot beruht auf bewährten Standardlösungen Dritter.
 
 ---
 
